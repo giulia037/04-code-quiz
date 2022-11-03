@@ -3,6 +3,7 @@ For this activity I started with a basic HTML file by using the HTML-5 code. Fro
 
 # Screen Shot 
 
+![image](https://user-images.githubusercontent.com/114687261/199779232-c8142884-43fe-490d-8950-ccfcb8d8bb9f.png)
 
 
 # Link to Deployed site
