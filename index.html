@@ -1,90 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Code Quiz</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
-  </head>
-
-  <body>
-    <header>
-        <div class="header">
-            <!--left corner to view high score-->
-            <div>
-                <button class="button" id="score_check">View Highscores</button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Coding-Quiz</title>
+</head> 
+<body>
+        <header class="header">
+            <h3 id = "Scores"> View High Scores</h3>
+            <h3 id="timeEl"> Time left: 60s</h3>
+        </header>
+        
+        <main class="card">
+            <div id="intro">
+                <h1 id="h1">Coding Quiz Challenge</h1>
+                <button id="Start" class="btnstart"> Start Quiz </button>
+                <h5 id="form"> </h5>
+                <h4 id="status"></h4>
             </div>
-            <!--right corner to set a timer-->
-            <div>
-                <p id="timer"> Time left: 60 s</p>
+            
+            <div class = "hide" id="questions">
+                <h1>Question</h1>
+                <h2>answer 1</h2>
+                <h2>answer 2</h2>
+                <h2>answer 3</h2>
+                <h2>answer 4</h2>
             </div>
-        </div>
-    </header>
+            <div id="answer">
+            </div>
+            <div class ="hide" id="initial">
+                <h1>Type your name</h1>
+                <input type="text" id="final-score-name">
+                <button id="save-info-btn">Save</button>
+            </div>
+        </main>
+    </div> 
+    
+    
 
-    <main>
-        <div>
-            <!--introduction section-->
-            <section class="intro_page" id="intro_page">
-                <div id="introduction">
-                    <h1>
-                        Welcome to Coding Quiz Challenge
-                    </h1>
-                    <p id="instruction">
-                        Try to answer the following code-related questions within the time limit. Keep in mid that incorrect answers will penalize your score/time by ten seconds!
-                    </p>
-                    <button class="button" id="start_button">Start Quiz</button>
-                </div>
-            </section>
 
-            <!--questions section-->
-            <section class="question_page" id="question_page">
-                <div>
-                    <!--question body-->
-                    <div>
-                        <h2 id = "ask_question">Ask the question</h2>
-                        <ul>
-                            <li><button class ="choices button" id="answer_btn1" value="a">Answer1</button></li>
-                            <li><button class ="choices button" id="answer_btn2" value="b">Answer2</button></li>
-                            <li><button class ="choices button" id="answer_btn3" value="c">Answer3</button></li>
-                            <li><button class ="choices button" id="answer_btn4" value="d">Answer4</button></li>
-                        </ul>
-                    <div>
 
-                    <!--question check-->
-                    <div id="check_line">
-                        <p>Correct or Wrong</p>
-                    <!-- </div> -->
-                </div>
-            </section>
 
-            <!--final report section-->
-            <section class="submit_page" id="submit_page">
-                <div>
-                    <h2 id="finish">All Done!</h2>
-                    <p id = "final_score">Your final score is: </p>
-                    <p>Enter initials
-                        <input id="initial">
-                        <button class="button" id="submit_btn">Submit</button>
-                    </p>
-                </div>
-            </section>
 
-            <!--high score section-->
-            <section class="highscore_page" id ="highscore_page">
-                <div>
-                    <h2>High Scores</h2>
-                    <div id="score_record"><p>Your record</p></div><br><br>
-                    <div>
-                        <button class="button" id="back_btn">Go back</button>
-                        <button class="button" id="clear_btn">Clear Highscores</button>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-    <footer>
-        <p>Made with 💗 by Giulia</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    <script src="./script.js"></script>
+</body>
 </html>

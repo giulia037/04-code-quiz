@@ -1,97 +1,30 @@
-* {
-    font-family:Georgia, 'Lato', Times, serif;
-    box-sizing: border-box;
-}
-
-.header{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-body {
+.card {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    justify-content: center;
-background-color: blueviolet;
-    background-repeat: no-repeat;
-    background-position:center; 
-    background-size: cover;
-  }
-
-main {
-    text-align: center;
-    justify-content: center;
-    flex: 1 0 auto;
-    margin-left:200px;
-    margin-right:200px;
-    color: white;
-    text-shadow: gray;
-}
-footer {
+    align-content: center;
     text-align: center;
 }
+.hide {
+    display: none;
+    
 
-.question_page {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
 }
-/*hide the bullet points from listings*/
-ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: baseline;
-    padding-left: 50px;
-   }
-
-li {
-    margin-bottom: 10px;
+#timeEl {
+    
 }
 
-/*display only the intro page and hide the rest sections*/
-.question_page, .submit_page, .highscore_page, #check_line {
-    display:none;
-}
-
-.button{
-    background:white;
-    border-radius: 3px;
-    padding: 10px;
+#questions{
+    background-color: purple;
     cursor: pointer;
-    margin-bottom: 10px;
-  }
-  #timer{
+    border-radius: 50px;
+    width: 1000px;
+    margin-left: 400px;
+    top: 400px;
     color: white;
-  }
-.button:hover{
-  
-    background-color:palevioletred
-  
-}
-  
-@media only screen and (max-width: 960px) {
-    body {
-        background-color: blueviolet;
-      
-    }
-    main {
-        margin-left:50px;
-        margin-right:50px;
-    }
-  }
 
-@media only screen and (max-width: 520px) {
-    body {
-     background-color: blueviolet ;
-      font-size: 130%;
-    }
-    main {
-        margin-left:12px;
-        margin-right:12px;
-    }
 }
+
+
+
+
+ 
